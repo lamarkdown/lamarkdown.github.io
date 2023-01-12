@@ -27,7 +27,7 @@ The standard Latex syntax is well beyond the scope of this documentation, but th
 
 1. You can write a complete Latex document within your `.md` file. It must begin with `\documentclass{...}`, contain `\begin{document}` and end with `\end{document}`.
 
-    ```markdown
+    ```
     # My Document
    
     \documentclass{article}
@@ -44,7 +44,7 @@ The standard Latex syntax is well beyond the scope of this documentation, but th
 
     In this abbreviated form, Lamarkdown will use `\documentclass{standalone}`, and insert `\begin{document}` and `\end{document}` if not already present. The `tikz` package will be included automatically.
 
-    ```markdown
+    ```
     # My Document
    
     Important diagram:
