@@ -50,7 +50,7 @@ That is, build files contain Python code. The `lamarkdown` package provides a se
 * "`doc()`" invokes a pre-defined bundle of settings intended to create something recognisable as a document.
 * "`css(...)`" adds a css rule (or collection of rules) to the output document.
 
-The complete set of available functions are described below under "Build API".
+The complete set of available functions are [described below](#build-api).
 
 
 ## Predefined Settings
@@ -95,7 +95,7 @@ There are a few more high-level bundles of settings:
 The `lamarkdown` package also provides the following lower-level functions, for greater control:
 
 
-### Markdown extensions
+### Markdown Extensions
 
 * `extensions(*ext)`:
     Applies one or more markdown extensions, either by name (e.g., `lamarkdown.ext.latex`) or by object reference (if you have instantiated the extension yourself).
@@ -106,7 +106,7 @@ The `lamarkdown` package also provides the following lower-level functions, for 
     (Note that this function does not accept already-instantiated extensions, only names.)
 
 
-### Styling and scripting (resources)
+### Styling and Scripting (Resources)
 
 * `css(value, if_xpaths = [], if_selectors = [])`:
 
@@ -167,7 +167,7 @@ The `lamarkdown` package also provides the following lower-level functions, for 
 Also see the functions below for ways to create structural differences between variant documents.
 
 
-### Document modification and querying
+### Document Modification and Querying
 
 * `prune(selector = None, xpath = None)`:
     Delete parts of the document tree that match either a CSS selector or an XPath expression.
@@ -194,7 +194,7 @@ Also see the functions below for ways to create structural differences between v
     The same as `wrap_content()`, except that multiple calls will place new HTML _inside_ previously-specified wrapping code, immediately around the Python Markdown output.
 
 
-### Other queries
+### Other Queries
 
 * `get_build_dir()`:
     Returns the directory that Lamarkdown uses for temporary build-related files.

@@ -1,0 +1,5 @@
+name: Lamarkdown
+description: Command-line markdown compiler for standalone document preparation, based on Python-Markdown
+url: http://lamarkdown.github.io
+markdown: kramdown
+theme: minimal

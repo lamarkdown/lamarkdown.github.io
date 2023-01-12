@@ -64,7 +64,7 @@ Both forms also accept an [attribute list](https://python-markdown.github.io/ext
 Here is a complete example `.md` file with embedded Latex:
 
 
-## Processing and embedding
+## Processing and Embedding
 
 Lamarkdown invokes `xelatex` (by default), or `pdflatex`, or any other command of your choosing, to compile each separate Latex snippet:
 
@@ -110,7 +110,7 @@ Lamarkdown also supports two methods of inserting the SVG image into the output 
 
 There may not be much to distinguish these two approaches from a practical point of view.
 
-## Configuration option reference
+## Options
 
 Here's a full list of supported config options:
 

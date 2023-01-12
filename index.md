@@ -14,9 +14,11 @@ Lamarkdown depends on Python 3.7+. To install via pip:
 
 To embed Latex code, you need a Latex distribution (e.g., [Texlive](https://tug.org/texlive/)), 
 which must be installed separately. The actual commands are configurable. By default, Lamarkdown's 
-Latex extension runs 'xelatex' and 'dvisvgm'.
+Latex extension runs `xelatex` and `dvisvgm`.
 
-## Basic usage
+(There's no need to have Latex installed if you don't intend to embed Latex code.)
+
+## Basic Usage
 
 To compile `mydocument.md` into `mydocument.html`:
 

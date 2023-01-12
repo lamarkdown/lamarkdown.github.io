@@ -22,7 +22,7 @@ The extension will be loaded in the following cases:
     la.extension('lamarkdown.ext.markers')
     ```
 
-## Example usage
+## Example Usage
 
 `doc()` provides CSS rules to enable alphabetical or Roman numbering (in place of Arabic numerals). To make use of this, create a marker that specifies the `alpha` or `roman` CSS classes:
 
