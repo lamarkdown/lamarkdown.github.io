@@ -1,7 +1,12 @@
 title: Lamarkdown
 description: Command-line markdown compiler for standalone document preparation, based on Python-Markdown
-url: http://lamarkdown.github.io
+url: https://lamarkdown.github.io
 markdown: kramdown
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: olivier3lanc/Jekyll-LibDoc # pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
+github:
+  repository_url: https://github.com/lamarkdown/lamarkdown
+  is_user_page: false
+  is_project_page: true
+show_downloads: false
