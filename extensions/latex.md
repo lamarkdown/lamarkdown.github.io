@@ -1,3 +1,7 @@
+---
+parent: Extensions
+---
+
 # Latex (`lamarkdown.ext.latex`)
 
 This extension allows markdown authors to embed Latex environments, and complete Latex documents. The Latex code is compiled (using an external command) to PDF, which is converted to SVG (scalable vector graphics) and embedded into the output HTML, using either an `<svg>` or `<img>` element.
@@ -18,7 +22,8 @@ The extension (and hence the Latex syntax) is enabled in the following cases:
     la.extension('lamarkdown.ext.latex')
     ```
 
-(Some may argue that embedding Latex within markdown pollutes a simple and readable format with less-readable, esoteric symbols. Nonetheless, this approach does allow you to create diagrams, and other visual elements, all within a single file, without having to manage a collection of external resources.)
+{: .note}
+Some may argue that embedding Latex within markdown pollutes a simple and readable format with less-readable, esoteric symbols. Nonetheless, this approach does allow you to create diagrams, and other visual elements, all within a single file, without having to manage a collection of external resources.
 
 
 ## Syntax

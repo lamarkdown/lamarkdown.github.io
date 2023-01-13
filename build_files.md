@@ -1,3 +1,7 @@
+---
+nav_order: 10
+---
+
 # Build Files
 
 Lamarkdown uses "build files" to customise the build process. Normally these are `md_build.py`, and/or a `.py` file with the same base name as the `.md` document being compiled.

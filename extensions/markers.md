@@ -1,3 +1,7 @@
+---
+parent: Extensions
+---
+
 # Markers (`lamarkdown.ext.markers`)
 
 This extension allows CSS styles to be applied to lists (HTML \<ol>, \<ul> and \<dl> elements), to set the numbering scheme to letters or Roman numerals (rather than Arabic numbers), or for general stylistic purposes. Markdown does not (otherwise) have any means of doing this, since there is no overall list syntax (only individual list items) to which you can attach a CSS class/attribute.

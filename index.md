@@ -1,3 +1,7 @@
+---
+nav_order: 1
+---
+
 # Introduction
 
 Lamarkdown is a command-line markdown document compiler based on [Python-Markdown](https://python-markdown.github.io/).

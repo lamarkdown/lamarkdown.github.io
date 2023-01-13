@@ -1,3 +1,7 @@
+---
+parent: Extensions
+---
+
 # Eval (`lamarkdown.ext.eval`)
 
 This extension lets authors insert computed values into documents, with inline expressions of the form `` $`...` `` (or ``` $``...`` ```, etc). There are two approaches to doing this:

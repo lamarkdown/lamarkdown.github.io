@@ -1,3 +1,8 @@
+---
+nav_order: 40
+has_children: true
+---
+
 # Extensions
 
 Markdown syntax is not well-standardised, and [Python-Markdown has an extension system](https://python-markdown.github.io/extensions/) (which Lamarkdown provides access to). Extensions essentially modify the markdown language.
@@ -22,7 +27,7 @@ In Lamarkdown, you can determine which extensions you want to use in several way
     * [`lamarkdown.ext.heading_numbers`](heading_numbers.md) adds a decimal numbering scheme to document headings.
     * [`lamarkdown.ext.latex`](latex.md) lets you insert Latex code, to be compiled, converted to SVG, to be embedded in the output HTML.
     * [`lamarkdown.ext.markers`](markers.md) lets you assign styling to lists.
-    * [`lamarkdown.ext.sections`](sectiond.md) lets you divide a document into `<section>` elements using `---` dividers, which may be used to create slideshows with [RevealJS](https://revealjs.com/)), for instance.
+    * [`lamarkdown.ext.sections`](sections.md) lets you divide a document into `<section>` elements using `---` dividers, which may be used to create slideshows with [RevealJS](https://revealjs.com/)), for instance.
 
 * A separate package called [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) provides a range of other specialist extensions. Lamarkdown has a dependency on PyMdown Extensions, so you should be able to use these without too much trouble.
 
