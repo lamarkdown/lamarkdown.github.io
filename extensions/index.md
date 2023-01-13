@@ -1,25 +1,28 @@
 ---
+title: Extensions
 nav_order: 40
 has_children: true
 ---
 
 # Extensions
 
-Markdown syntax is not well-standardised, and [Python-Markdown has an extension system](https://python-markdown.github.io/extensions/) (which Lamarkdown provides access to). Extensions essentially modify the markdown language.
+Lamarkdown provides access to [Python-Markdown extension system](https://python-markdown.github.io/extensions/), to extend the markdown language. (The core language, though clean and simple, is too limited for many purposes.)
 
 In Lamarkdown, you can determine which extensions you want to use in several ways:
 
 * Accept the defaults (which are in place if you don't have a build file);
 
-* Write a [build file](./BuildFiles) that calls `extension()` or `extensions()`. Normally you would provide one or more extension names, as strings. You could also create and instantiate an Extension class according to the [Python-Markdown API documentation](https://python-markdown.github.io/extensions/api/).
-
 * Write a build file that calls `doc()` or another such function representing a predefined bundle of settings which happens to include an extension.
 
-(To emphasise: an extension only changes the markdown dialect, whereas a build file/module makes decisions about _which_ extensions to use, as well as determining the styling/scripting of the output document.)
+* Write a [build file](./BuildFiles) that calls `extension()` or `extensions()`. Normally you would provide one or more extension names, as strings. You can also pass in an Extension _object_, which may be easiest if you choose to create your own extension(s).
+
+{: .note}
+An _extension_ changes the markdown dialect, whereas other constructs provided by Larmarkdown (like `doc()` and build files) make decisions about _which_ extensions to use, as well as the styling/scripting of the output document.
+
 
 ## What Extensions are Available?
 
-* You should be aware of the extensions that come [bundled with Python-Markdown itself](https://python-markdown.github.io/extensions/). Some of these, like [attr_list](https://python-markdown.github.io/extensions/attr_list/) in particular, may be important for styling, scripting and accessibility purposes.
+* Python-Markdown provides [various standard extensions](https://python-markdown.github.io/extensions/). Some, [attr_list](https://python-markdown.github.io/extensions/attr_list/) in particular, may be important for styling, scripting and accessibility purposes.
 
 * Lamarkdown provides some of its own extensions:
 
@@ -29,9 +32,12 @@ In Lamarkdown, you can determine which extensions you want to use in several way
     * [`lamarkdown.ext.markers`](markers.md) lets you assign styling to lists.
     * [`lamarkdown.ext.sections`](sections.md) lets you divide a document into `<section>` elements using `---` dividers, which may be used to create slideshows with [RevealJS](https://revealjs.com/)), for instance.
 
-* A separate package called [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) provides a range of other specialist extensions. Lamarkdown has a dependency on PyMdown Extensions, so you should be able to use these without too much trouble.
+* [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) provides a range of other specialist extensions. Lamarkdown has a dependency on PyMdown Extensions, so you should be able to use these without too much trouble.
 
 * The Python-Markdown documentation also lists a [range of other third-party extensions](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions). You will need to manually install these, though.
+
+* You can create your own extensions, conforming to the [Python-Markdown extensions API](https://python-markdown.github.io/extensions/api/).
+
 
 ## Extension Configuration
 
