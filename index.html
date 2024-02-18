@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Documentation for Lamarkdown, a tool for creating standalone HTML documents from Markdown source, intended to fulfil a similar use case to Latex.">
+        <meta name="description" content="Documentation for Lamarkdown, a tool for creating standalone HTML documents from Markdown source, intended to fulfil similar use cases to Latex.">
         <meta name="author" content="David J A Cooper">
         
         <link rel="shortcut icon" href="img/favicon.ico">
@@ -170,28 +170,8 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<!--# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.-->
-
 <h1 id="introduction">Introduction</h1>
-<p>Lamarkdown is a command-line markdown document compiler based on <a href="https://python-markdown.github.io">Python-Markdown</a>.</p>
-<p>The goal is to provide a tool comparable to LaTeX, but with the Markdown and HTML formats in
-place of TeX and PDF. It is <em>not</em> a goal to build static websites, though Lamarkdown&rsquo;s <a href="extensions/">extensions</a> can be reused in <a href="https://www.mkdocs.org/">MkDocs</a> (or in other applications based on Python-Markdown).</p>
+<p>Lamarkdown is a command-line document preparation system based on <a href="https://python-markdown.github.io">Python-Markdown</a>. It attempts to address similar use cases to LaTeX, but using the Markdown and HTML formats. It is <em>not</em> directly intended to build static websites, though its <a href="extensions/">extensions</a> can be reused in <a href="https://www.mkdocs.org/">MkDocs</a> (or in other applications based on Python-Markdown).</p>
 <p>Take the <a href="tour/">Lamarkdown tour</a> to get a first impression.</p>
 <h2 id="1-requirements-and-installation"><span class="la-label">1. </span>Requirements and Installation</h2>
 <p>Lamarkdown depends on Python 3.8+. To install via pip:</p>
@@ -207,10 +187,10 @@ place of TeX and PDF. It is <em>not</em> a goal to build static websites, though
 </li>
 </ul>
 <h2 id="2-basic-usage"><span class="la-label">2. </span>Basic Usage</h2>
-<p>To compile <code>mydocument.md</code> into <code>mydocument.html</code>:</p>
+<p>To compile <code>mydocument.md</code> into <code>mydocument.html</code>, run:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>lamd<span class="w"> </span>mydocument.md
 </code></pre></div>
-<p>You can enable the live-update mode using <code>-l</code>/<code>--live</code>:</p>
+<p>To enable the live-update mode, use <code>-l</code>/<code>--live</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>lamd<span class="w"> </span>-l<span class="w"> </span>mydocument.md
 </code></pre></div>
 <p>This will launch a local web-server and a web-browser, and will keep <code>mydocument.html</code> in sync with any changes made to <code>mydocument.md</code>, until you press Ctrl+C in the terminal.</p>
@@ -306,6 +286,7 @@ For more advanced usage, see the following:
 
         <footer class="col-md-12">
             <hr>
+                <p>Copyright &copy; 2021-2024 <a href="https://github.com/davidjacooper">David J A Cooper</a>.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script src="js/jquery-3.6.0.min.js"></script>
@@ -383,5 +364,5 @@ For more advanced usage, see the following:
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2024-02-17 17:25:16.527355+00:00
+Build Date UTC : 2024-02-18 05:34:55.128616+00:00
 -->
